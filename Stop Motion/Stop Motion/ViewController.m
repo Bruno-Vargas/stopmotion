@@ -33,14 +33,12 @@ int indice;
 
 -(void)tradeImage
 {
-    NSLog(@"%@",[NSString stringWithFormat:@"%d.png",indice]);
     self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.png",indice]];
     indice = ((indice + 1)% 55) + 1; //nunca será 0 somente neste caso, falha minha
 }
 -(void)marcarCompasso
 {
     //inicializa o timer e comeca a funcionar;
-    NSLog(@"%f", self.factor);
     self.alarm =
     [NSTimer scheduledTimerWithTimeInterval: 1/self.factor
                                      target:self
