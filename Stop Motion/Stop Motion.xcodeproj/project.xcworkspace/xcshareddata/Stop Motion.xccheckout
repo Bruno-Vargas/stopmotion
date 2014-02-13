@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>68515F01-AEE6-49DA-9266-FFE150BD522A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Stop Motion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ABE92D98-EB08-40A9-AF76-72C9B05026F4</key>
+		<string>https://github.com/Bruno-Vargas/stopmotion.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Stop Motion/Stop Motion.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ABE92D98-EB08-40A9-AF76-72C9B05026F4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Bruno-Vargas/stopmotion.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ABE92D98-EB08-40A9-AF76-72C9B05026F4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ABE92D98-EB08-40A9-AF76-72C9B05026F4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>stopmotion</string>
+		</dict>
+	</array>
+</dict>
+</plist>
