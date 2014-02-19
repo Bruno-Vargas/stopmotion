@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "MovieMe.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UISlider *frequency;
@@ -15,6 +16,7 @@
 @property (nonatomic) NSTimer *alarm;
 @property (nonatomic) float factor;
 @property (nonatomic) AVAssetWriter *videoWriter;
+@property (nonatomic) MovieMe * movieMaker;
 
 @end
 
@@ -26,6 +28,8 @@ int indice;
 	// Do any additional setup after loading the view, typically from a nib.
     indice = 1;
     self.factor = self.frequency.value;
+    self.movieMaker = [[MovieMe alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,7 +37,6 @@ int indice;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 -(void)tradeImage
 {
     self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.png",indice]];
@@ -50,7 +53,6 @@ int indice;
                                     repeats:YES];
     
 }
-
 -(void) stopAction
 {
     [self.alarm invalidate];
@@ -61,16 +63,14 @@ int indice;
 }
 - (IBAction)buttonBegin:(id)sender {
     [self marcarCompasso];
+    [self.movieMaker makeMagicWithFrequecy: 1/self.factor];
 }
 - (IBAction)buttonFrequency:(id)sender {
     [self stopAction];
     self.factor = self.frequency.value;
 }
 
--(void) wireWriter
-{
 
-}
 
 - (IBAction)buttonBeginVideo:(id)sender {
     [self.videoWriter startWriting];

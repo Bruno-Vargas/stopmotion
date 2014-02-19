@@ -11,6 +11,5 @@
 
 @interface MovieMe : NSObject
 
-
-
+-(void) makeMagicWithFrequecy:(float) frequency;
 @end

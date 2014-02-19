@@ -33,8 +33,8 @@
 {
     NSString *currentTime = [NSString stringWithFormat:@"%@", [NSDate date]];
     
-    NSString *filePath = [NSString stringWithFormat:@"%@/%@.mov", [self applicationDocumentsDirectory], currentTime];
-
+   // NSString *filePath = [NSString stringWithFormat:@"%@/%@.mov", [self applicationDocumentsDirectory], currentTime];
+    NSString *filePath = [NSString stringWithFormat:@"/Users/BrunoVargas/Documents/BEPiD/projetoStopMotion/%@.mov", currentTime];
     self.images = [[NSMutableArray alloc]init];
     for (int i=0; i < 5; i++) {
         [self.images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%d",i+1]]];

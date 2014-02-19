@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>35020DEA-0E19-4E2C-9FDE-E84BD6A5C1D0</string>
+	<string>189B2D21-DE0E-42EC-906B-8BFE3E8DB3E7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Stop Motion</string>
+	<string>testeimagevideo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>ABE92D98-EB08-40A9-AF76-72C9B05026F4</key>
 		<string>https://github.com/Bruno-Vargas/stopmotion.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Stop Motion/Stop Motion.xcodeproj/project.xcworkspace</string>
+	<string>Stop Motion/Teste- FIX/testeimagevideo/testeimagevideo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ABE92D98-EB08-40A9-AF76-72C9B05026F4</key>
-		<string>../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Bruno-Vargas/stopmotion.git</string>
