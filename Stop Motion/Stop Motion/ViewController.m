@@ -7,12 +7,15 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UISlider *frequency;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic) NSTimer *alarm;
 @property (nonatomic) float factor;
+@property (nonatomic) AVAssetWriter *videoWriter;
+
 @end
 
 @implementation ViewController
@@ -63,4 +66,15 @@ int indice;
     [self stopAction];
     self.factor = self.frequency.value;
 }
+
+-(void) wireWriter
+{
+
+}
+
+- (IBAction)buttonBeginVideo:(id)sender {
+    [self.videoWriter startWriting];
+}
+
+
 @end

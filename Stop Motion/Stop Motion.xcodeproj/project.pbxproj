@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9A5502918B225470050EB76 /* MovieMe.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A5502818B225470050EB76 /* MovieMe.m */; };
+		F9A5502B18B22F970050EB76 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A5502A18B22F970050EB76 /* AVFoundation.framework */; };
 		F9C531EF18AD3F9A00FD4CB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C531EE18AD3F9A00FD4CB8 /* Foundation.framework */; };
 		F9C531F118AD3F9A00FD4CB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C531F018AD3F9A00FD4CB8 /* CoreGraphics.framework */; };
 		F9C531F318AD3F9A00FD4CB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C531F218AD3F9A00FD4CB8 /* UIKit.framework */; };
@@ -91,6 +93,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F902DFD218B4D00400486394 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		F9A5502718B225470050EB76 /* MovieMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieMe.h; sourceTree = "<group>"; };
+		F9A5502818B225470050EB76 /* MovieMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieMe.m; sourceTree = "<group>"; };
+		F9A5502A18B22F970050EB76 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F9C531EB18AD3F9A00FD4CB8 /* Stop Motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stop Motion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C531EE18AD3F9A00FD4CB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F9C531F018AD3F9A00FD4CB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A5502B18B22F970050EB76 /* AVFoundation.framework in Frameworks */,
 				F9C531F118AD3F9A00FD4CB8 /* CoreGraphics.framework in Frameworks */,
 				F9C531F318AD3F9A00FD4CB8 /* UIKit.framework in Frameworks */,
 				F9C531EF18AD3F9A00FD4CB8 /* Foundation.framework in Frameworks */,
@@ -215,6 +222,8 @@
 		F9C531ED18AD3F9A00FD4CB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F902DFD218B4D00400486394 /* QuickLook.framework */,
+				F9A5502A18B22F970050EB76 /* AVFoundation.framework */,
 				F9C531EE18AD3F9A00FD4CB8 /* Foundation.framework */,
 				F9C531F018AD3F9A00FD4CB8 /* CoreGraphics.framework */,
 				F9C531F218AD3F9A00FD4CB8 /* UIKit.framework */,
@@ -232,6 +241,8 @@
 				F9C5320318AD3F9A00FD4CB8 /* Main_iPad.storyboard */,
 				F9C5320618AD3F9A00FD4CB8 /* ViewController.h */,
 				F9C5320718AD3F9A00FD4CB8 /* ViewController.m */,
+				F9A5502718B225470050EB76 /* MovieMe.h */,
+				F9A5502818B225470050EB76 /* MovieMe.m */,
 				F9C5320918AD3F9A00FD4CB8 /* Images.xcassets */,
 				F9C5329618AD43DC00FD4CB8 /* images */,
 				F9C531F518AD3F9A00FD4CB8 /* Supporting Files */,
@@ -487,6 +498,7 @@
 			files = (
 				F9C5320818AD3F9A00FD4CB8 /* ViewController.m in Sources */,
 				F9C531FF18AD3F9A00FD4CB8 /* AppDelegate.m in Sources */,
+				F9A5502918B225470050EB76 /* MovieMe.m in Sources */,
 				F9C531FB18AD3F9A00FD4CB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,6 +718,7 @@
 				F9C5322218AD3F9A00FD4CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9C5322318AD3F9A00FD4CB8 /* Build configuration list for PBXNativeTarget "Stop MotionTests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +727,7 @@
 				F9C5322518AD3F9A00FD4CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
