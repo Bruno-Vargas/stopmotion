@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9881F4C18B633DE00EC9236 /* garota1.png in Resources */ = {isa = PBXBuildFile; fileRef = F9881F4418B633DE00EC9236 /* garota1.png */; };
+		F9881F4D18B633DE00EC9236 /* garota2.png in Resources */ = {isa = PBXBuildFile; fileRef = F9881F4518B633DE00EC9236 /* garota2.png */; };
+		F9881F4E18B633DE00EC9236 /* garota3.png in Resources */ = {isa = PBXBuildFile; fileRef = F9881F4618B633DE00EC9236 /* garota3.png */; };
+		F9881F4F18B633DE00EC9236 /* garota4.png in Resources */ = {isa = PBXBuildFile; fileRef = F9881F4718B633DE00EC9236 /* garota4.png */; };
+		F9881F5018B633DE00EC9236 /* garota5.png in Resources */ = {isa = PBXBuildFile; fileRef = F9881F4818B633DE00EC9236 /* garota5.png */; };
+		F9881F5118B633DE00EC9236 /* garota6.png in Resources */ = {isa = PBXBuildFile; fileRef = F9881F4918B633DE00EC9236 /* garota6.png */; };
+		F9881F5218B633DE00EC9236 /* garota7.png in Resources */ = {isa = PBXBuildFile; fileRef = F9881F4A18B633DE00EC9236 /* garota7.png */; };
+		F9881F5318B633DE00EC9236 /* garota8.png in Resources */ = {isa = PBXBuildFile; fileRef = F9881F4B18B633DE00EC9236 /* garota8.png */; };
 		F9A5502918B225470050EB76 /* MovieMe.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A5502818B225470050EB76 /* MovieMe.m */; };
 		F9A5502B18B22F970050EB76 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A5502A18B22F970050EB76 /* AVFoundation.framework */; };
 		F9C531EF18AD3F9A00FD4CB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C531EE18AD3F9A00FD4CB8 /* Foundation.framework */; };
@@ -94,6 +102,14 @@
 
 /* Begin PBXFileReference section */
 		F902DFD218B4D00400486394 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		F9881F4418B633DE00EC9236 /* garota1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garota1.png; sourceTree = "<group>"; };
+		F9881F4518B633DE00EC9236 /* garota2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garota2.png; sourceTree = "<group>"; };
+		F9881F4618B633DE00EC9236 /* garota3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garota3.png; sourceTree = "<group>"; };
+		F9881F4718B633DE00EC9236 /* garota4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garota4.png; sourceTree = "<group>"; };
+		F9881F4818B633DE00EC9236 /* garota5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garota5.png; sourceTree = "<group>"; };
+		F9881F4918B633DE00EC9236 /* garota6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garota6.png; sourceTree = "<group>"; };
+		F9881F4A18B633DE00EC9236 /* garota7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garota7.png; sourceTree = "<group>"; };
+		F9881F4B18B633DE00EC9236 /* garota8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garota8.png; sourceTree = "<group>"; };
 		F9A5502718B225470050EB76 /* MovieMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieMe.h; sourceTree = "<group>"; };
 		F9A5502818B225470050EB76 /* MovieMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieMe.m; sourceTree = "<group>"; };
 		F9A5502A18B22F970050EB76 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -338,6 +354,14 @@
 				F9C5325B18AD43D400FD4CB8 /* 54.png */,
 				F9C5325C18AD43D400FD4CB8 /* 55.png */,
 				F9C5325D18AD43D400FD4CB8 /* 56.png */,
+				F9881F4418B633DE00EC9236 /* garota1.png */,
+				F9881F4518B633DE00EC9236 /* garota2.png */,
+				F9881F4618B633DE00EC9236 /* garota3.png */,
+				F9881F4718B633DE00EC9236 /* garota4.png */,
+				F9881F4818B633DE00EC9236 /* garota5.png */,
+				F9881F4918B633DE00EC9236 /* garota6.png */,
+				F9881F4A18B633DE00EC9236 /* garota7.png */,
+				F9881F4B18B633DE00EC9236 /* garota8.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -419,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9C5329518AD43D400FD4CB8 /* 56.png in Resources */,
+				F9881F5018B633DE00EC9236 /* garota5.png in Resources */,
 				F9C5326D18AD43D400FD4CB8 /* 16.png in Resources */,
 				F9C5328918AD43D400FD4CB8 /* 44.png in Resources */,
 				F9C5329318AD43D400FD4CB8 /* 54.png in Resources */,
@@ -430,6 +455,7 @@
 				F9C5327918AD43D400FD4CB8 /* 28.png in Resources */,
 				F9C5327118AD43D400FD4CB8 /* 20.png in Resources */,
 				F9C5326418AD43D400FD4CB8 /* 7.png in Resources */,
+				F9881F4E18B633DE00EC9236 /* garota3.png in Resources */,
 				F9C5327018AD43D400FD4CB8 /* 19.png in Resources */,
 				F9C5325F18AD43D400FD4CB8 /* 2.png in Resources */,
 				F9C5328418AD43D400FD4CB8 /* 39.png in Resources */,
@@ -450,7 +476,9 @@
 				F9C5327318AD43D400FD4CB8 /* 22.png in Resources */,
 				F9C5327B18AD43D400FD4CB8 /* 30.png in Resources */,
 				F9C5327718AD43D400FD4CB8 /* 26.png in Resources */,
+				F9881F4C18B633DE00EC9236 /* garota1.png in Resources */,
 				F9C5328F18AD43D400FD4CB8 /* 50.png in Resources */,
+				F9881F5318B633DE00EC9236 /* garota8.png in Resources */,
 				F9C5326118AD43D400FD4CB8 /* 4.png in Resources */,
 				F9C5328618AD43D400FD4CB8 /* 41.png in Resources */,
 				F9C5327418AD43D400FD4CB8 /* 23.png in Resources */,
@@ -459,13 +487,17 @@
 				F9C5326B18AD43D400FD4CB8 /* 14.png in Resources */,
 				F9C5328018AD43D400FD4CB8 /* 35.png in Resources */,
 				F9C5326818AD43D400FD4CB8 /* 11.png in Resources */,
+				F9881F4D18B633DE00EC9236 /* garota2.png in Resources */,
 				F9C531F918AD3F9A00FD4CB8 /* InfoPlist.strings in Resources */,
 				F9C5329118AD43D400FD4CB8 /* 52.png in Resources */,
 				F9C5329018AD43D400FD4CB8 /* 51.png in Resources */,
+				F9881F5118B633DE00EC9236 /* garota6.png in Resources */,
 				F9C5326918AD43D400FD4CB8 /* 12.png in Resources */,
+				F9881F4F18B633DE00EC9236 /* garota4.png in Resources */,
 				F9C5328518AD43D400FD4CB8 /* 40.png in Resources */,
 				F9C5328E18AD43D400FD4CB8 /* 49.png in Resources */,
 				F9C5327218AD43D400FD4CB8 /* 21.png in Resources */,
+				F9881F5218B633DE00EC9236 /* garota7.png in Resources */,
 				F9C5327518AD43D400FD4CB8 /* 24.png in Resources */,
 				F9C5326A18AD43D400FD4CB8 /* 13.png in Resources */,
 				F9C5329218AD43D400FD4CB8 /* 53.png in Resources */,

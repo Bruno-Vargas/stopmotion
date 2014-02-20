@@ -47,24 +47,7 @@
     NSString *currentTime = [NSString stringWithFormat:@"%@", [NSDate date]];
     // NSString *filePath = [NSString stringWithFormat:@"%@/%@.mov", [self applicationDocumentsDirectory], currentTime];
     NSString *filePath = [NSString stringWithFormat:@"/Users/BrunoVargas/Documents/BEPiD/projetoStopMotion/%@.mov", currentTime];
-    for (int i=1; i < 57; i++) {
-        [self.images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%d",i]]];
-    }
-    NSLog(@"numero de imagens: %d", [self.images count]);
-    
-//    self.imagesResized = [[NSMutableArray alloc]init];
-//    for (int i=0; i<5; i++) {
-//        CGSize newSize = CGSizeMake(800, 800);
-//        [self.imagesResized addObject:[self resizeImageToSize:newSize :self.images[i]]];
-//    }
-//    
-//    self.imagesResizedSubs = [[NSMutableArray alloc]init];
-//    for (int i=0; i<5; i++) {
-//        //CGPoint newSize = CGPointMake(0, 0);
-//        int point = ([self.imagesResized[i] size].height-45);
-//        [self.imagesResizedSubs addObject:[self drawText:@"12345678901234567890123456789012345" inImage:self.imagesResized[i] atPoint:CGPointMake(10, point)]];
-//    }
-//    
+    [self creatImageArray];
 //    self.width = [self.imagesResizedSubs[0]size].width;
 //    self.height = [self.imagesResizedSubs[0]size].height;
 
@@ -109,7 +92,7 @@
         
         while (!append_ok){
             if (adaptor.assetWriterInput.readyForMoreMediaData){
-                CMTime frameTime = CMTimeMake(frameCount,(int16_t) 1);
+                CMTime frameTime = CMTimeMake(frameCount,(int16_t) 14);
                 append_ok = [adaptor appendPixelBuffer:buffer withPresentationTime:frameTime];
                 if(buffer)
                     //CVBufferRelease(buffer);
@@ -235,5 +218,34 @@
     return newImage;
 }
 
+-(void) receizeArrayImage: (NSMutableArray *) arrayImages
+{
+    self.imagesResized = [[NSMutableArray alloc]init];
+        for (int i=0; i<5; i++) {
+            CGSize newSize = CGSizeMake(800, 800);
+            [self.imagesResized addObject:[self resizeImageToSize:newSize :arrayImages[i]]];
+        }
+}
+-(void) subitleMovie: (NSMutableArray *) arrayImages
+{
+    self.imagesResizedSubs = [[NSMutableArray alloc]init];
+        for (int i=0; i<[arrayImages count]; i++) {
+            //CGPoint newSize = CGPointMake(0, 0);
+            int point = ([arrayImages[i] size].height-45);
+            [self.imagesResizedSubs addObject:[self drawText:@"Teste Legenda Bruno Varagas" inImage:arrayImages[i] atPoint:CGPointMake(10, point)]];
+    }
+}
 
+-(void)creatImageArray
+{
+//    for (int i=1; i < 57; i++) {
+//        [self.images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%d",i]]];
+//    }
+//    NSLog(@"numero de imagens: %d", [self.images count]);
+    for (int i = 1; i<= 8; i ++)
+    {
+            [self.images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"garota%d",i]]];
+    }
+
+}
 @end
