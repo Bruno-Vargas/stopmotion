@@ -39,8 +39,8 @@ int indice;
 }
 -(void)tradeImage
 {
-    self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.png",indice]];
-    indice = ((indice + 1)% 55) + 1; //nunca será 0 somente neste caso, falha minha
+    self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"garota%d.png",indice]];
+    indice = ((indice + 1)% 7) + 1; //nunca será 0 somente neste caso, falha minha
 }
 -(void)marcarCompasso
 {

@@ -48,11 +48,15 @@
     // NSString *filePath = [NSString stringWithFormat:@"%@/%@.mov", [self applicationDocumentsDirectory], currentTime];
     NSString *filePath = [NSString stringWithFormat:@"/Users/BrunoVargas/Documents/BEPiD/projetoStopMotion/%@.mov", currentTime];
     [self creatImageArray];
-//    self.width = [self.imagesResizedSubs[0]size].width;
-//    self.height = [self.imagesResizedSubs[0]size].height;
-
-    self.width = [self.images[0]size].width;
-    self.height = [self.images[0]size].height;
+    [self receizeArrayImage:self.images];
+    
+    self.images = [self.imagesResized copy];
+    
+    self.width = [self.imagesResized[0]size].width;
+    self.height = [self.imagesResized[0]size].height;
+//
+//    self.width = [self.images[0]size].width;
+//    self.height = [self.images[0]size].height;
     
     NSError *error = Nil;
     self.videoWriter = [[AVAssetWriter alloc] initWithURL:[NSURL fileURLWithPath:filePath] fileType:AVFileTypeQuickTimeMovie error:&error];
@@ -92,7 +96,7 @@
         
         while (!append_ok){
             if (adaptor.assetWriterInput.readyForMoreMediaData){
-                CMTime frameTime = CMTimeMake(frameCount,(int16_t) 14);
+                CMTime frameTime = CMTimeMake(frameCount,(int16_t) 16); //aqui mudar o tempo em que cada quadro aparece no video, convencional 16 por segundo
                 append_ok = [adaptor appendPixelBuffer:buffer withPresentationTime:frameTime];
                 if(buffer)
                     //CVBufferRelease(buffer);
@@ -221,10 +225,17 @@
 -(void) receizeArrayImage: (NSMutableArray *) arrayImages
 {
     self.imagesResized = [[NSMutableArray alloc]init];
-        for (int i=0; i<5; i++) {
-            CGSize newSize = CGSizeMake(800, 800);
-            [self.imagesResized addObject:[self resizeImageToSize:newSize :arrayImages[i]]];
-        }
+    UIImage * convetedImage;
+    for (convetedImage in self.images)
+    {
+        CGSize newSize = CGSizeMake(800, 600);
+        [self.imagesResized addObject:[self resizeImageToSize:newSize :convetedImage]];
+    }
+    
+//    for (int i=0; i<5; i++) {
+//            CGSize newSize = CGSizeMake(800, 800);
+//            [self.imagesResized addObject:[self resizeImageToSize:newSize :arrayImages[i]]];
+//        }
 }
 -(void) subitleMovie: (NSMutableArray *) arrayImages
 {
